@@ -3,20 +3,20 @@
     text-align: center;
   }
 
-  .clearfix::after {
-      content: "";
-      display: block;
-      clear: both;
-  }
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
   
-  body {
-      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-      background-image: url("../images/what-the-hex.png");
-      width: 960px;
-      color: #777;
-      margin: auto;
-      font-size: 18px;
-  }
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url("../images/what-the-hex.png");
+    width: 960px;
+    color: #777;
+    margin: auto;
+    font-size: 18px;
+}
   
   header {
     position: fixed;
@@ -127,7 +127,7 @@ hr {
 
 img {
     height: 250px;
-    float:left;
+    float: left;
     margin: 0px 15px 5px 0;
 }
 
@@ -211,21 +211,92 @@ form {
 
 @media (max-width: 980px) {
     body {
-      width: 900px;
+      width: auto;
+    }
+    #bio {
+        width: auto;
+    }
+    header {
+        width: 100%;
+    }
+
+    footer {
+        width: auto;
     }
   }
   
 @media (max-width: 768px) {
-    body {
-    width: 700px;
+    header {
+        width: 100%;
     }
-}
+
+    #bio {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        width: auto;
+    }
+  }
   
 @media (max-width: 640px) {
-    body {
-    width: 600px;
-    }
+    /* body {
+    width: auto;
+    } */
     header {
-    position: static;
+        position: static;
+        top: 0px;
+        margin: auto;
+        margin-bottom: 200px;
+        color: darkgray;
+        background: white;
+        width: auto;
+        height: auto;
     }
-}
+
+    #name {
+        background:#4aaaa5;
+        width: 100%;
+        height: 90px;
+        /* margin-top: 0;
+        margin-left: 50px; */
+        margin: auto;
+        color:white;
+        padding: 30px 0;
+        /* float: left; */
+        font-size: 28px;
+    }
+
+    #links {
+        list-style-type: none;
+        margin: auto;
+        padding: 0;
+        overflow: hidden;
+        float: none;
+        font-size: 20px;
+    }
+
+    #bio {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        margin-top: -150px;
+    }
+     
+    h2 {
+        /* margin-top: 200px; */
+        text-align: left;
+        font-size: 28px;
+        float: none;
+        color: #4aaaa5;
+    }
+
+    img {
+        float: none;
+    }
+
+    footer {
+        width: auto;
+    }
+  }
